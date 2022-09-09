@@ -51,7 +51,7 @@ const dayList = [
     "Friday",
     "Saturday"
 ]
-document.getElementById('welcomeHeading').innerHTML = `Welcome to the official page of
+document.getElementById('welcomeHeading').innerHTML = `Welcome to the official page of,
 <div id="welHead">Students' chapter CSE</div>
 Have a great ${dayList[dayFinal]}! ^^ `;
 

@@ -12,17 +12,22 @@
 }
 
 :root {
-    --backColor: #ebedd0;
-    --backColorLight: #ebedd0a8;
-    --headText: #111;
-    --themeBlue: #0a131d;
-    --lightBack: rgb(211, 214, 147);
-}
-
-.dark {
     --themeBlue: #ebedd0;
     --backColor: #111;
     --backColorLight: rgba(17, 17, 17, 0.664);
+    --headText: #111;
+    --lightBack: rgb(211, 214, 147);
+
+}
+
+.dark {
+
+
+    --backColor: #ebedd0;
+    --backColorLight: #ebedd0a8;
+
+    --themeBlue: #0a131d;
+
 
 }
 
@@ -191,7 +196,7 @@ nav {
 }
 
 #welcomeHeading {
-    
+
     color: var(--backColorLight);
     text-align: left;
     padding: 4vw 5vw;
@@ -205,13 +210,6 @@ nav {
     padding: 1vh 0;
     font-size: 9vw;
     font-weight: 700;
-}
-.scrollDown{
-    margin: 5vh 5vw;
-    color: var(--backColor);
-    padding: 1vh;
-    font-size: 5vw ;
-    border: 1px solid var(--backColor);
 }
 
 /* note from heads  */
@@ -227,6 +225,8 @@ nav {
     border: 1.3px solid var(--backColorLight);
     outline-offset: 2px;
 
+
+
 }
 
 #noteHeading {
@@ -241,9 +241,11 @@ nav {
 
 .notePara {
     padding-top: 2vh;
+    font-style: italic;
 }
 
 #TeacherName {
+    font-style: normal;
     text-align: right;
     padding: 3vh 0 0 0;
     font-weight: 600;
@@ -257,9 +259,10 @@ nav {
 
 /* why sc  */
 #whySc {
-    padding: 3vw;
+    padding: 5vh 3vw;
     color: var(--backColor);
     text-align: right;
+    font-size: 5vw;
 }
 
 #whyScHeading {
@@ -274,7 +277,7 @@ nav {
 #News {
     padding: 3vw;
     border: 1px solid var(--backColor);
-    margin: 1vw;
+    margin: 2vw;
 }
 
 #NewsHeading {
@@ -330,4 +333,106 @@ nav {
 .cardDate {
     font-size: 3vw;
     color: #ebedd0a4;
+}
+
+/* upcoming events  */
+#upcomingEvents {
+    padding: 4vh 3vw;
+}
+
+#EventsHead {
+    color: var(--backColor);
+    font-size: 8vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.eventsSubhead {
+    font-size: 4vw;
+    color: var(--backColor);
+    text-align: center;
+}
+
+/* event cards  */
+.eventCard {
+    margin: 3vh 0;
+    border: 1px solid var(--backColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--backColor);
+    padding: 2vh;
+    gap: 5vw;
+}
+
+.circle {
+    height: 2vh;
+    width: 2vh;
+    background-color: var(--backColor);
+    border-radius: 50%;
+}
+
+.rightEventDate {
+    font-size: 3vw;
+}
+
+.rightEventContent {
+    font-size: 6vw;
+    font-weight: 600;
+}
+
+.rightEventKnowMore a {
+    text-decoration: none;
+    color: var(--backColorLight);
+}
+
+/* newsletter  */
+#NewsLetter {
+    padding: 1vh 5vw;
+    color: var(--backColor);
+}
+
+#newsLetterHeading {
+    font-size: 8vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+#newsLetterDetails {
+    text-align: center;
+    padding: 2vh 0;
+
+}
+
+#EmailEnteringBox {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 1vw;
+}
+
+#leftEmail {
+    width: 70vw;
+
+
+}
+
+#newsLetterEmail {
+    width: 65vw;
+    border: none;
+    background-color: rgba(17, 17, 17, 0.305);
+    padding: 2vw;
+    color: var(--backColor);
+
+
+}
+
+#rightSend {
+    background-color: var(--backColor);
+    color: var(--themeBlue);
+    width: 35vw;
+    padding: 1.6vw;
+    text-align: center;
+
 }
