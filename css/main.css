@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+    /* font-family: 'Rubik Mono One', sans-serif; */
+}
+
+:root {
+    --backColor: #ebedd0;
+    --backColorLight: #ebedd0a8;
+    --headText: #111;
+    --themeBlue: #0a131d;
+    --lightBack: rgb(211, 214, 147);
+}
+.dark{
+    --themeBlue:#ebedd0;
+    --backColor:#111;
+    --backColorLight: rgba(17, 17, 17, 0.664);
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* navigation bar - mobile */
+#mobileMenuPage{
+    height: 100vh;
+    position: fixed;
+    background-color: var(--themeBlue);
+    top:0;
+    left: 0;
+    right: 0;
+    pointer-events: all;
+    z-index: 200;
+    transform: translateY(-100vh);
+}
+
+#close-btn{
+    color: var(--backColor);
+    position: absolute;
+    right:20px;
+    top:20px;
+    font-size: 7vw;
+}
+#mobMenuOptions{
+    color: var(--backColor);
+    display: flex;
+    
+    flex-direction: column;
+    text-align: left;
+    padding: 0 5vw;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap:2vh;
+}
+#mobMenuOptions div{
+    text-align: center;
+    min-width: 80vw;
+    color: var(--backColor);
+    font-size: 7vw;
+    border: 1px solid var(--backColor);
+    padding: 2vw;
+}
+#mobMenuOptions div:nth-child(6){
+    background-color: var(--backColor);
+    color: var(--themeBlue);
+    font-weight: 700;
+}
+#mobMenuOptions div:nth-child(7){
+    border: none;
+
+}
+#mobMenuOptions div:nth-child(7) a{
+    text-decoration: none;
+    color: var(--backColor);
+    font-size: 8vw;
+    
+}
+
+
+body{
+    background-color: var(--themeBlue);
+    
+
+    
+}
+nav{
+    z-index: 100;
+    pointer-events: all;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+    color: #ebedd0 ;
+}
+#mobileMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5vw;
+}
+#menuOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+#menuOptions div{
+    background-color:  #ebedd0;
+    height: 2px;
+    width:16px;
+}
+#menuOptions div:nth-child(2){
+    width: 20px;
+}
+
+#logoName{
+    font-weight: 600;
+}
+
+/* home page  */
+#DisplayHero{
+    height: 30vh;
+    width: 100vw;
+}
+.filter{
+    background:linear-gradient(#111,transparent,#111);
+    height: 30vh;
+    width: 100vw;
+}
+#heroCards{
+    height:30vh;
+    width: 100vw;
+    background: url('https://images.unsplash.com/photo-1662574428878-6969eba0b86c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
+    background-size: cover;
+}
+#heroBottomText{
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30vh;
+    padding: 3vw;
+}
+#heroHeading{
+    font-size: 5vw;
+    color: #ebedd0;
+}
+#heroDetails{
+    color: #ebedd0a8;
+    font-size: 3vw;
+}
+#welcomeHeading{
+   color: var(--backColorLight);
+    text-align: left;
+    padding: 7vw 5vw;
+
+    font-size: 4vw;
+}
+#welcomeHeading div{
+    color: var(--backColor);
+    font-weight: 200;
+    padding: 1vh 0;
+    font-size: 7vw;
+    font-family: 'Rubik Mono One', sans-serif; 
+}
+
+/* note from heads  */
+#noteFromHead{
+    padding: 3vw;
+}
+#noteWires{
+    padding: 5vw;
+    color: var(--backColor);
+    text-align: right;
+    font-size: 4vw;
+    border: 1.3px solid var(--backColorLight);
+    outline-offset: 2px;
+
+}
+#noteHeading{
+    font-size: 5vw;
+    font-weight: 600;
+    color: var(--themeBlue);
+    padding: 1vw;
+    text-align: center;
+    background-color: var(--backColor);
+    border: 1px solid var(--backColor);
+}
+.notePara{
+    padding-top: 2vh;
+}
+
+#TeacherName{
+    text-align: right;
+    padding: 3vh 0 0 0 ;
+    font-weight: 600;
+    color:var(--backColor);
+    font-size: 6vw;
+}
+#teacherDetails{
+    font-size: 4vw;
+}
+
+/* why sc  */
+#whySc{
+    padding: 3vw;
+    color: var(--backColor);
+    text-align: right;
+}
+#whyScHeading{
+    text-align: right;
+    font-size: 8vw;
+    color: var(--backColor);
+    /* font-weight: 800; */
+    font-family: 'Rubik Mono One', sans-serif; 
+}
+
+/* news corner */
+#News{
+    padding: 3vw;
+    border: 1px solid var(--backColor);
+    margin: 1vw;
+  
+
+}
+#NewsHeading{
+    font-size: 8vw;
+    font-family: 'Rubik Mono One', sans-serif; 
+    text-align: left;
+    color: var(--backColor);
+  
+}
+#NewsCards{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: row;
+    gap:10px;
+}
+.newsCard{
+    height: 40vh;
+    min-width: 70vw;
+}
+.newsDetails{
+    font-size: 4vw;
+    padding: 2vh 0;
+}
+.CardBottomContent{
+    position: relative;
+    height: 100%;
+    background:linear-gradient(transparent,#111);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: left;
+    padding: 3vw;
+    color:  #ebedd0;
+
+}
+.cardHeading{
+    font-size: 6vw;
+    font-weight: 700;
+    padding: 1vh 0;
+
+}
+.cardContent{
+    font-size: 4vw;
+    color: #ebedd0e1;
+}
+.cardDate{
+    font-size: 3vw;
+    color: #ebedd0a4;
+}
