@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     /* font-family: 'Rubik Mono One', sans-serif; */
 }
@@ -15,9 +18,10 @@
     --themeBlue: #0a131d;
     --lightBack: rgb(211, 214, 147);
 }
-.dark{
-    --themeBlue:#ebedd0;
-    --backColor:#111;
+
+.dark {
+    --themeBlue: #ebedd0;
+    --backColor: #111;
     --backColorLight: rgba(17, 17, 17, 0.664);
 
 }
@@ -27,11 +31,11 @@
 }
 
 /* navigation bar - mobile */
-#mobileMenuPage{
+#mobileMenuPage {
     height: 100vh;
     position: fixed;
     background-color: var(--themeBlue);
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     pointer-events: all;
@@ -39,26 +43,28 @@
     transform: translateY(-100vh);
 }
 
-#close-btn{
+#close-btn {
     color: var(--backColor);
     position: absolute;
-    right:20px;
-    top:20px;
+    right: 20px;
+    top: 20px;
     font-size: 7vw;
 }
-#mobMenuOptions{
+
+#mobMenuOptions {
     color: var(--backColor);
     display: flex;
-    
+
     flex-direction: column;
     text-align: left;
     padding: 0 5vw;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    gap:2vh;
+    gap: 2vh;
 }
-#mobMenuOptions div{
+
+#mobMenuOptions div {
     text-align: center;
     min-width: 80vw;
     color: var(--backColor);
@@ -66,128 +72,164 @@
     border: 1px solid var(--backColor);
     padding: 2vw;
 }
-#mobMenuOptions div:nth-child(6){
+
+#mobMenuOptions div:nth-child(6) {
     background-color: var(--backColor);
     color: var(--themeBlue);
     font-weight: 700;
 }
-#mobMenuOptions div:nth-child(7){
+
+#mobMenuOptions div:nth-child(7) {
     border: none;
 
 }
-#mobMenuOptions div:nth-child(7) a{
+
+#mobMenuOptions div:nth-child(7) a {
     text-decoration: none;
     color: var(--backColor);
     font-size: 8vw;
-    
+
 }
 
 
-body{
+body {
     background-color: var(--themeBlue);
-    
 
-    
+
+
 }
-nav{
+
+nav {
     z-index: 100;
     pointer-events: all;
     position: fixed;
-    top:0;
-    right:0;
-    left:0;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4vw;
-    color: #ebedd0 ;
+    color: #ebedd0;
 }
-#mobileMenu{
+
+#mobileMenu {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:5vw;
+    gap: 5vw;
 }
-#menuOptions{
+
+#menuOptions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:5px;
+    gap: 5px;
 }
-#menuOptions div{
-    background-color:  #ebedd0;
+
+#menuOptions div {
+    background-color: #ebedd0;
     height: 2px;
-    width:16px;
+    width: 16px;
 }
-#menuOptions div:nth-child(2){
+
+#menuOptions div:nth-child(2) {
     width: 20px;
 }
 
-#logoName{
+#logoName {
     font-weight: 600;
+    font-size: 5vw
 }
 
 /* home page  */
-#DisplayHero{
-    height: 30vh;
+#DisplayHero {
+    height: 40vh;
     width: 100vw;
 }
-.filter{
-    background:linear-gradient(#111,transparent,#111);
-    height: 30vh;
+
+.filter {
+    background: linear-gradient(#111, transparent, #111);
+    height: 40vh;
     width: 100vw;
 }
-#heroCards{
-    height:30vh;
+
+#heroCards {
+    height: 40vh;
     width: 100vw;
     background: url('https://images.unsplash.com/photo-1662574428878-6969eba0b86c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
     background-size: cover;
 }
-#heroBottomText{
-    display:flex ;
+
+#heroBottomText {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 30vh;
+    height: 40vh;
     padding: 3vw;
 }
-#heroHeading{
-    font-size: 5vw;
+
+#heroHeading {
+    font-size: 6vw;
     color: #ebedd0;
 }
-#heroDetails{
-    color: #ebedd0a8;
-    font-size: 3vw;
-}
-#welcomeHeading{
-   color: var(--backColorLight);
-    text-align: left;
-    padding: 7vw 5vw;
 
+#heroDetails {
+    color: #ebedd0a8;
     font-size: 4vw;
 }
-#welcomeHeading div{
+
+#welcome {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid var(--backColor);
+    margin: 5vw;
+}
+
+#welcomeHeading {
+    
+    color: var(--backColorLight);
+    text-align: left;
+    padding: 4vw 5vw;
+
+    font-size: 6vw;
+}
+
+#welHead {
     color: var(--backColor);
     font-weight: 200;
     padding: 1vh 0;
-    font-size: 7vw;
-    font-family: 'Rubik Mono One', sans-serif; 
+    font-size: 9vw;
+    font-weight: 700;
+}
+.scrollDown{
+    margin: 5vh 5vw;
+    color: var(--backColor);
+    padding: 1vh;
+    font-size: 5vw ;
+    border: 1px solid var(--backColor);
 }
 
 /* note from heads  */
-#noteFromHead{
+#noteFromHead {
     padding: 3vw;
 }
-#noteWires{
+
+#noteWires {
     padding: 5vw;
     color: var(--backColor);
     text-align: right;
-    font-size: 4vw;
+    font-size: 5vw;
     border: 1.3px solid var(--backColorLight);
     outline-offset: 2px;
 
 }
-#noteHeading{
+
+#noteHeading {
     font-size: 5vw;
     font-weight: 600;
     color: var(--themeBlue);
@@ -196,87 +238,96 @@ nav{
     background-color: var(--backColor);
     border: 1px solid var(--backColor);
 }
-.notePara{
+
+.notePara {
     padding-top: 2vh;
 }
 
-#TeacherName{
+#TeacherName {
     text-align: right;
-    padding: 3vh 0 0 0 ;
+    padding: 3vh 0 0 0;
     font-weight: 600;
-    color:var(--backColor);
+    color: var(--backColor);
     font-size: 6vw;
 }
-#teacherDetails{
+
+#teacherDetails {
     font-size: 4vw;
 }
 
 /* why sc  */
-#whySc{
+#whySc {
     padding: 3vw;
     color: var(--backColor);
     text-align: right;
 }
-#whyScHeading{
+
+#whyScHeading {
     text-align: right;
     font-size: 8vw;
     color: var(--backColor);
-    /* font-weight: 800; */
-    font-family: 'Rubik Mono One', sans-serif; 
+    font-weight: 800;
+
 }
 
 /* news corner */
-#News{
+#News {
     padding: 3vw;
     border: 1px solid var(--backColor);
     margin: 1vw;
-  
-
 }
-#NewsHeading{
+
+#NewsHeading {
     font-size: 8vw;
-    font-family: 'Rubik Mono One', sans-serif; 
+    font-weight: 800;
     text-align: left;
     color: var(--backColor);
-  
+
 }
-#NewsCards{
+
+#NewsCards {
     display: flex;
     overflow-y: scroll;
     flex-direction: row;
-    gap:10px;
+    gap: 10px;
 }
-.newsCard{
+
+.newsCard {
     height: 40vh;
     min-width: 70vw;
 }
-.newsDetails{
+
+.newsDetails {
     font-size: 4vw;
     padding: 2vh 0;
 }
-.CardBottomContent{
+
+.CardBottomContent {
     position: relative;
     height: 100%;
-    background:linear-gradient(transparent,#111);
+    background: linear-gradient(transparent, #111);
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     text-align: left;
     padding: 3vw;
-    color:  #ebedd0;
+    color: #ebedd0;
 
 }
-.cardHeading{
+
+.cardHeading {
     font-size: 6vw;
     font-weight: 700;
     padding: 1vh 0;
 
 }
-.cardContent{
+
+.cardContent {
     font-size: 4vw;
     color: #ebedd0e1;
 }
-.cardDate{
+
+.cardDate {
     font-size: 3vw;
     color: #ebedd0a4;
 }

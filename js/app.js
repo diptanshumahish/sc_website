@@ -52,8 +52,8 @@ const dayList = [
     "Saturday"
 ]
 document.getElementById('welcomeHeading').innerHTML = `Welcome to the official page of
-<div>Students' chapter CSE</div>
-Have a great ${dayList[dayFinal]}! ^^`;
+<div id="welHead">Students' chapter CSE</div>
+Have a great ${dayList[dayFinal]}! ^^ `;
 
 
 //data fetch api using json
