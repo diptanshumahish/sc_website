@@ -436,3 +436,38 @@ nav {
     text-align: center;
 
 }
+
+/* footer section   */
+footer{
+    background-color: #0a131d;
+    color: #ebedd0;
+
+    padding: 5vw;
+}
+.footerHead{
+    font-weight: 600;
+    text-align: center;
+}
+#footerInfo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2vw;
+    flex-direction: column;
+    gap:5vh;
+    color: #ebedd0dc;
+   
+}
+.footerContact{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction:row ;
+    gap:4vw;
+    
+}
+#footerSocials a{
+    color: #ebedd0;
+    font-size: 20px;
+}
