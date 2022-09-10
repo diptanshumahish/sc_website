@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,222 +12,204 @@
     <!-- aos library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fa -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-  <body onscroll="showNav()">
+<body onscroll="showNav()">
     <nav id="navbar">
-      <div id="logo">
-        <p id="logoName">IEI Students' Chapter</p>
-        <p id="logoName_details">CSE</p>
-      </div>
-      <!-- menu for mobile devices -->
-      <div id="mobileMenu">
-        <div id="themeTogglerBtn"><i class="fa-solid fa-moon"></i></div>
-        <div id="menuOptions" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div id="logo">
+            <p id="logoName">IEI Students' Chapter</p>
+            <p id="logoName_details">CSE</p>
         </div>
-      </div>
+        <!-- menu for mobile devices -->
+        <div id="mobileMenu">
+            <div id="themeTogglerBtn"><i class="fa-solid fa-moon"></i></div>
+            <div id="menuOptions" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </nav>
     <div id="home">
-      <!-- here in this hero section various event cards will keep palying -->
-      <div id="DisplayHero">
-        <div id="heroCards">
-          <div class="filter">
-            <div id="heroBottomText">
-              <div id="heroHeading">An event maybe?</div>
-              <div id="heroDetails">some details</div>
+        <!-- here in this hero section various event cards will keep palying -->
+        <div id="DisplayHero">
+            <div id="heroCards">
+                <div class="filter">
+                    <div id="heroBottomText">
+                        <div id="heroHeading">An event maybe?</div>
+                        <div id="heroDetails">some details</div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="welcome">
-        <div id="welcomeHeading"></div>
-      </div>
-      <div id="noteFromHead">
-        <!-- note that in the desktop version there would be a a  picture as well -->
-        <div id="noteWires">
-          <div id="noteHeading">A note from the SC heads:</div>
-          <div class="notePara">
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-            tempore sit non a ducimus eos odit, odio natus accusantium qui,
-            repellat neque totam quis, rem cupiditate earum voluptatum nulla.
-            Officiis maiores, impedit necessitatibus dignissimos facilis
-            expedita eos tenetur pariatur placeat neque ipsam voluptatum,
-            possimus animi assumenda vitae similique? In, quidem?""
-            <div id="TeacherName">
-              <div>-Some Name</div>
-              <div id="teacherDetails">(Post maybe?)</div>
+        <div id="welcome">
+            <div id="welcomeHeading"></div>
+        </div>
+        <div id="noteFromHead">
+            <!-- note that in the desktop version there would be a a  picture as well -->
+            <div id="noteWires">
+                <div id="noteHeading">A note from the SC heads:</div>
+                <div class="notePara">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempore sit non a ducimus eos odit, odio natus accusantium qui, repellat neque totam quis, rem cupiditate earum voluptatum nulla. Officiis maiores, impedit necessitatibus dignissimos facilis
+                    expedita eos tenetur pariatur placeat neque ipsam voluptatum, possimus animi assumenda vitae similique? In, quidem?""
+                    <div id="TeacherName">
+                        <div>-Some Name</div>
+                        <div id="teacherDetails">(Post maybe?)</div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="whySc" data-aos="fade-right">
-        <div id="whyScHeading">Why a Students' Chapter?</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-        reprehenderit necessitatibus voluptas. Dolorem, ab dolor debitis facere
-        laudantium voluptate assumenda non dolores mollitia. Sequi omnis quidem
-        aliquid est minima eaque ex, provident modi, reiciendis recusandae
-        dignissimos?
-      </div>
-      <div id="News">
-        <div id="NewsHeading">
-          News Corner
-          <div class="newsDetails">Keep yourself updated</div>
-          <div id="NewsCards"></div>
+        <div id="whySc" data-aos="fade-right">
+            <div id="whyScHeading">Why a Students' Chapter?</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit necessitatibus voluptas. Dolorem, ab dolor debitis facere laudantium voluptate assumenda non dolores mollitia. Sequi omnis quidem aliquid est minima eaque ex, provident modi,
+            reiciendis recusandae dignissimos?
         </div>
-      </div>
-      <!-- upcoming events  -->
-      <div id="upcomingEvents">
-        <div id="EventsHead">What's upcoming?</div>
-        <div class="eventsSubhead">
-          Keep an eye on our latest upcoming events
-        </div>
-        <div id="eventsFew">
-          <div class="eventCard" data-aos="fade-right">
-            <div class="leftEvent">
-              <div class="circle"></div>
+        <div id="News">
+            <div id="NewsHeading">
+                News Corner
+                <div class="newsDetails">Keep yourself updated</div>
+                <div id="NewsCards"></div>
             </div>
-            <div class="rightEvent">
-              <div class="rightEventDate">12th,October</div>
-              <div class="rightEventContent">A hackathon event</div>
-              <div class="rightEventKnowMore"><a href="">See more</a></div>
+        </div>
+        <!-- upcoming events  -->
+        <div id="upcomingEvents">
+            <div id="EventsHead">What's upcoming?</div>
+            <div class="eventsSubhead">
+                Keep an eye on our latest upcoming events
             </div>
-          </div>
-          <!-- card 2 -->
+            <div id="eventsFew">
+                <div class="eventCard" data-aos="fade-right">
+                    <div class="leftEvent">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="rightEvent">
+                        <div class="rightEventDate">12th,October</div>
+                        <div class="rightEventContent">A hackathon event</div>
+                        <div class="rightEventKnowMore"><a href="">See more</a></div>
+                    </div>
+                </div>
+                <!-- card 2 -->
 
-          <div class="eventCard" data-aos="fade-right">
-            <div class="leftEvent">
-              <div class="circle"></div>
+                <div class="eventCard" data-aos="fade-right">
+                    <div class="leftEvent">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="rightEvent">
+                        <div class="rightEventDate">15th,October</div>
+                        <div class="rightEventContent">Something Else</div>
+                        <div class="rightEventKnowMore"><a href="">See more</a></div>
+                    </div>
+                </div>
             </div>
-            <div class="rightEvent">
-              <div class="rightEventDate">15th,October</div>
-              <div class="rightEventContent">Something Else</div>
-              <div class="rightEventKnowMore"><a href="">See more</a></div>
+        </div>
+        <div id="NewsLetter" data-aos="fade-up">
+            <div id="newsLetterHeading">Newsletter</div>
+            <div id="newsLetterDetails">
+                Everyone is requested to subscribe to our newsletter to keep receieving updates about events
             </div>
-          </div>
+            <div id="EmailEnteringBox">
+                <div id="leftEmail">
+                    <input type="email" name="newsLetterEmail" id="newsLetterEmail" placeholder="Enter your email" />
+                </div>
+                <div id="rightSend">Submit</div>
+            </div>
         </div>
-      </div>
-      <div id="NewsLetter" data-aos="fade-up">
-        <div id="newsLetterHeading">Newsletter</div>
-        <div id="newsLetterDetails">
-          Everyone is requested to subscribe to our newsletter to keep
-          receieving updates about events
-        </div>
-        <div id="EmailEnteringBox">
-          <div id="leftEmail">
-            <input
-              type="email"
-              name="newsLetterEmail"
-              id="newsLetterEmail"
-              placeholder="Enter your email"
-            />
-          </div>
-          <div id="rightSend">Submit</div>
-        </div>
-      </div>
     </div>
     <div id="quickLinks">
-      <div id="quickLinksHeading">
-        Quick Links <i class="fa-solid fa-arrow-right"></i>
-      </div>
-      <div id="quickLinksCards">
-        <!-- events  -->
-        <div class="quickLinkCard q1" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Events</div>
-            <div class="quickLinkDetails">Check out more about events</div>
-          </div>
+        <div id="quickLinksHeading">
+            Quick Links <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <!-- teams  -->
-        <div class="quickLinkCard q2" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Teams</div>
-            <div class="quickLinkDetails">Discover our various teams</div>
-          </div>
-        </div>
-        <!-- gallery  -->
-        <div class="quickLinkCard q3"data-aos="fade-right"> 
-          <div class="qfilter">
-            <div class="quickLinkHead">Gallery</div>
-            <div class="quickLinkDetails">
-              Check out those captured moments!
+        <div id="quickLinksCards">
+            <!-- events  -->
+            <div class="quickLinkCard q1" data-aos="fade-right">
+                <div class="qfilter">
+                    <div class="quickLinkHead">Events</div>
+                    <div class="quickLinkDetails">Check out more about events</div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Activities -->
-        <div class="quickLinkCard q4"data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Activities</div>
-            <div class="quickLinkDetails">
-              See what we are doing!
+            <!-- teams  -->
+            <div class="quickLinkCard q2" data-aos="fade-right">
+                <div class="qfilter">
+                    <div class="quickLinkHead">Teams</div>
+                    <div class="quickLinkDetails">Discover our various teams</div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- contact  -->
-        <div class="quickLinkCard q5" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Contact</div>
-            <div class="quickLinkDetails">
-              Let's connect!
+            <!-- gallery  -->
+            <div class="quickLinkCard q3" data-aos="fade-right">
+                <div class="qfilter">
+                    <div class="quickLinkHead">Gallery</div>
+                    <div class="quickLinkDetails">
+                        Check out those captured moments!
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- Activities -->
+            <div class="quickLinkCard q4" data-aos="fade-right">
+                <div class="qfilter">
+                    <div class="quickLinkHead">Activities</div>
+                    <div class="quickLinkDetails">
+                        See what we are doing!
+                    </div>
+                </div>
+            </div>
+            <!-- contact  -->
+            <div class="quickLinkCard q5" data-aos="fade-right">
+                <div class="qfilter">
+                    <div class="quickLinkHead">Contact</div>
+                    <div class="quickLinkDetails">
+                        Let's connect!
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <footer>
-      <div class="footerHead">&copy; Students' chapter Cse 2022</div>
-      <div id="footerInfo">
-        <div id="footerMainContact">
-          <div class="footerContact">
-            <i class="fa-solid fa-phone"></i>+10000000
-          </div>
-          <div class="footerContact">
-            <i class="fa-regular fa-envelope"></i>Something@email.com
-          </div>
+        <div class="footerHead">&copy; Students' chapter Cse 2022</div>
+        <div id="footerInfo">
+            <div id="footerMainContact">
+                <div class="footerContact">
+                    <i class="fa-solid fa-phone"></i>+10000000
+                </div>
+                <div class="footerContact">
+                    <i class="fa-regular fa-envelope"></i>Something@email.com
+                </div>
+            </div>
+            <div id="footerSocials">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
         </div>
-        <div id="footerSocials">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-          <a href=""> <i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-square-github"></i></a>
-          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-        </div>
-      </div>
     </footer>
     <script src="/js/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0ac8d96b33.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0ac8d96b33.js" crossorigin="anonymous"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
-  </body>
-  <div id="mobileMenuPage">
+</body>
+<div id="mobileMenuPage">
     <div id="close-btn" onclick="closeMenu()">&times;</div>
     <div id="mobMenuOptions">
-      NAVIGATION
-      <div>Home</div>
-      <div>Events</div>
-      <div>Teams</div>
-      <div>Activities</div>
-      <div>Gallery</div>
-      <div>Become a member</div>
-      SOCIALS
-      <div id="socialLinks">
+        NAVIGATION
+        <div>Home</div>
+        <div>Events</div>
+        <div></div><a href="teams.html">Teams</a></div>
+    <div>Activities</div>
+    <div>Gallery</div>
+    <div>Become a member</div>
+    SOCIALS
+    <div id="socialLinks">
         <a href=""><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-square-facebook"></i></a>
         <a href=""> <i class="fa-brands fa-linkedin"></i></a>
         <a href=""><i class="fa-brands fa-square-github"></i></a>
         <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-      </div>
     </div>
-  </div>
+</div>
+</div>
+
 </html>
