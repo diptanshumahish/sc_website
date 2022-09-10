@@ -469,5 +469,10 @@ footer{
 }
 #footerSocials a{
     color: #ebedd0;
-    font-size: 20px;
+    font-size: 30px;
+}
+#footerSocials {
+    display: flex;
+    flex-direction: row;
+    gap:3vw;
 }
