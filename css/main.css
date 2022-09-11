@@ -781,6 +781,11 @@ footer {
     border-radius: 0.5vh;
     margin: 1vw;
     font-size: 1vw;
+    cursor: pointer;
+  }
+  #Member:hover{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    transition: 500ms ease;
   }
   .lapOption{
     padding: 1.5vh 1vw;
@@ -941,11 +946,11 @@ footer {
 }
 
 .newsCard {
-  height: 65vh;
-  width: 20vw;
-  min-width: 20vw;
+  height: 450px;
+  width: 400px;
+  min-width: 400px;
   border-radius: 1px;
-  border: 1px solid var(--backColor);
+  /* border: 1px solid var(--backColor); */
   padding: 1vw;
 }
 
@@ -1033,5 +1038,8 @@ footer {
 .quickLinkCard:hover{
   transition:all  800ms ease;
   background-size: 120%;
+}
+#footerSocials{
+  gap:20px;
 }
 }
