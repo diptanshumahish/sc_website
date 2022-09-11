@@ -40,6 +40,9 @@
   z-index: 200;
   transform: translateY(-100vh);
 }
+#lapMenu{
+  display: none;
+}
 
 #close-btn {
   color: var(--backColor);
@@ -149,8 +152,10 @@ nav {
 #heroCards {
   height: 40vh;
   width: 100vw;
-  background: url("https://images.unsplash.com/photo-1662574428878-6969eba0b86c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80");
+  background:url(/assets/testImage.JPG);
   background-size: cover;
+  background-position: center;
+  
 }
 
 #heroBottomText {
@@ -180,6 +185,9 @@ nav {
   border: 1px solid var(--backColor);
   margin: 5vw;
 }
+#ScLogo{
+  display: none;
+}
 
 #welcomeHeading {
   color: var(--backColorLight);
@@ -198,6 +206,9 @@ nav {
 }
 
 /* note from heads  */
+#imageSir{
+  display: none;
+}
 #noteFromHead {
   padding: 3vw;
 }
@@ -510,10 +521,7 @@ footer {
 
 /* reponsiveness for tablets */
 @media screen and (min-width: 600px) {
-  /* navigation bar - mobile */
-
-
-
+  /* navigation bar - tablet*/
 #mobMenuOptions {
   padding: 0 10vw;
 
@@ -527,7 +535,6 @@ footer {
   #logoName {
     font-size: 4vw;
   }
-
   #heroCards,
   #heroBottomText,
   .filter,
@@ -748,4 +755,284 @@ footer {
     gap: 3vw;
   }
 
+}
+/* responsiveness for bigger screens  */
+@media screen and (min-width:920px) {
+  #mobileMenuPage{
+    display: none;
+  }
+  #mobileMenu{
+    display: none;
+  }
+  #lapMenu{
+    display: flex;
+    flex-direction: row;
+    gap:0.5;
+    align-items:center ;
+    justify-content: space-between;
+  }
+  #logoName{
+    font-size: 2.5vw;
+  }
+  #Member{
+    background-color: #ebedd0;
+    padding: 1.5vh 1vw;
+    color: #111;
+    font-weight: 600;
+    border-radius: 0.5vh;
+    margin: 1vw;
+    font-size: 1vw;
+  }
+  .lapOption{
+    padding: 1.5vh 1vw;
+    border-radius: 0.5vh;
+  }
+  .lapOption:hover{
+    background-color: #ebedd0;
+    transition: 500ms ease;
+    color: #111;
+    cursor: pointer;
+  }
+  nav{
+    padding: 1.5vw;
+
+  }
+  /* home page  */
+#DisplayHero {
+  height: 65vh;
+
+
+}
+
+.filter {
+  background: linear-gradient(#111, rgba(17, 17, 17, 0.26), #111);
+  height: 65vh;
+ 
+
+}
+
+#heroCards {
+  height: 65vh;
+}
+
+#heroBottomText {
+  height: 65vh;
+  padding: 1vw;
+  border-bottom: 30px solid var(--backColor);
+}
+
+#heroHeading {
+  font-size: 2vw;
+  color: #ebedd0;
+}
+
+#heroDetails {
+  color: #ebedd0a8;
+  font-size: 1vw;
+}
+/* welcome  */
+#welcome{
+  padding: none;
+  margin: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  height: unset;
+
+}
+#ScLogo{
+  display: flex;
+  width: 25vw;
+  border-radius: 0.5vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 1vw;
+  height:25vw;
+  color: var(--themeBlue);
+  background-color: var(--backColor);
+
+}
+#welcomeHeading {
+  font-size: 2vw;
+  width: 60vw;
+}
+#iei{
+  font-size: 6vw;
+  font-weight: 700;
+}
+#sc{
+  font-size: 8vw;
+  font-weight: 900;
+}
+
+#welHead {
+  font-size: 3vw;
+}
+
+/* note from head  */
+#noteFromHead{
+  display: flex;
+  padding:0;
+  margin: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#noteWires{
+  width:55vw;
+  border: none;
+  border-right: 3px solid var(--backColor);
+}
+#imageSir{
+  display: block;
+  height: 70vh;
+  min-height: 70vh;
+
+  width:45vw;
+  padding: 2vw;
+}
+#imageContent{
+  height:100%;
+  width:100%;
+  
+  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1574802406791-ef6898f311d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=682&q=80');
+  background-size: cover;
+}
+#noteHeading{
+  font-size: 2vw;
+  text-align: right;
+}
+.notePara{
+  font-size: 1.5vw;
+}
+/* why sc  */
+#whyScHeading{
+  font-size: 4vw;
+  text-align:left ;
+  padding: 0;
+  margin:0 ;
+}
+#whySc{
+  text-align: left;
+  font-size: 1.5vw;
+  align-items: flex-start;
+}
+
+/* news heading  */
+#NewsHeading{
+  font-size: 4vw;
+}
+.newsDetails{
+  font-size: 1.5vw
+}
+#NewsCards {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: row;
+  gap: 1vw;
+
+}
+#newsLetterDetails{
+  font-size: 1.2vw;
+}
+
+.newsCard {
+  height: 65vh;
+  width: 20vw;
+  min-width: 20vw;
+  border-radius: 1px;
+  border: 1px solid var(--backColor);
+  padding: 1vw;
+}
+
+.newsDetails {
+  font-size: 2vw;
+  padding: 2vh 0;
+  font-weight: normal;
+}
+
+.CardBottomContent {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(transparent, #111);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: left;
+  padding: 3vw;
+  color: #ebedd0;
+}
+
+.cardHeading {
+  font-size: 2vw;
+  font-weight: 700;
+  padding: 1vh 0;
+}
+
+.cardContent {
+  font-size: 1vw;
+  color: #ebedd0e1;
+}
+
+.cardDate {
+  font-size: 1vw;
+  color: #ebedd0a4;
+}
+/* upcoming events  */
+#EventsHead{
+  font-size: 4vw;
+}
+.eventsSubhead{
+  font-size:1.5vw ;
+}
+.rightEventContent{
+  font-size: 3vw;
+}
+
+/* email  */
+#leftEmail{
+  font-size: 1.2vw;
+}
+#rightSend{
+  min-height: 5vh;
+  padding: 1.9vw;
+  font-size: 1.2vw;
+}
+/* quick links  */
+#quickLinksHeading{
+  font-size: 4vw;
+}
+#quickLinks {
+  padding: 10vw;
+}
+
+#quickLinksCards {
+ 
+  gap: 3vh;
+}
+
+#quickLinksCards {
+  padding: 7vh 0;
+}
+.quickLinkCard {
+  height: 30vh;
+  transition: 600ms ease;
+  cursor: pointer;
+
+}
+.quickLinkHead {
+  font-size: 3vw;
+}
+.quickLinkDetails {
+  font-size: 2vw;
+}
+.quickLinkCard:hover{
+  transition:all  800ms ease;
+  background-size: 120%;
+}
 }
