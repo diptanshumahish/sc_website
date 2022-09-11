@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities@SC Cse</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="/css/activity.css">
+</head>
+<body onscroll="showNav()">
+    <nav id="navbar">
+      <div id="logo">
+        <p id="logoName">IEI Students' Chapter</p>
+        <p id="logoName_details">CSE</p>
+      </div>
+      <!-- menu for mobile devices -->
+      <div id="mobileMenu">
+        <div id="themeTogglerBtn"><i class="fa-solid fa-moon"></i></div>
+        <div id="menuOptions" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- menu for bigger screens  -->
+      <div id="lapMenu">
+        <div class="lapOption" onclick="location.href='../index.html'">Home</div>
+        <div class="lapOption" onclick="location.href='../pages/events.html'">Events</div>
+        <div class="lapOption" onclick="location.href='../pages/teams.html'">Teams</div>
+        <div class="lapOption" onclick="location.href='../pages/gallery.html'">Gallery</div>
+        <div class="lapOption" onclick="location.href='../pages/activity.html'">Activities</div>
+        <div class="lapOption"id="themeTogglerBtnLap"><i class="fa-solid fa-moon"></i></div>
+        <div  id ="Member" onclick="location.href='../pages/membership.html'">Become a member</div>
+
+      </div>
+    </nav>
+    
+    <script src="/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ac8d96b33.js"
+      crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+<div id="mobileMenuPage">
+  <div id="close-btn" onclick="closeMenu()">&times;</div>
+  <div id="mobMenuOptions">
+    NAVIGATION
+    <div onclick="location.href='../index.html'">Home</div>
+    <div onclick="location.href='../pages/events.html'">Events</div>
+    <div onclick="location.href='../pages/teams.html'">Teams</div>
+    <div onclick="location.href='../pages/activity.html'">Activities</div>
+    <div onclick="location.href='../pages/gallery.html'">Gallery</div>
+    <div onclick="location.href='../pages/membership.html'">Become a member</div>
+    SOCIALS
+    <div id="socialLinks">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+      <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-square-github"></i></a>
+      <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+  </div>
+</html>
+</html>
