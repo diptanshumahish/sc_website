@@ -136,8 +136,54 @@ nav {
   font-weight: 600;
   font-size: 5vw;
 }
-
-
+#whyMembership{
+  margin-top: 10vh;
+  padding: 2vh 3vw;
+}
+#whyMembershipHeading{
+  color: var(--backColor);
+  font-weight: 800;
+  font-size: 8vw;
+}
+#reasons{
+  color:var(--backColor);
+}
+#membershipForm{
+  padding: 5vh 4vw;
+}
+#formHeading{
+  font-size: 8vw;
+  font-weight: 800;
+  color: var(--backColor);
+}
+#regForm{
+  display: flex;
+  flex-direction: column;
+  gap:2vh;
+  padding: 3vh 0;
+}
+.inputBox{
+  border: 1px solid var(--backColor);
+  background-color: var(--themeBlue);
+  width: 100%;
+  padding: 2vh;
+  color: var(--backColor);
+}
+label p{
+  font-size: 4vw;
+  padding: 1vh 0;
+  color: var(--backColor);
+}
+#submitButton{
+  background-color: var(--backColor);
+  border: none;
+  color: var(--themeBlue);
+  padding: 4vw;
+  font-size: 4vw;
+}
+.help a{
+  color: var(--backColor);
+}
 /* reponsiveness for tablets */
 @media screen and (min-width: 600px) {
   /* navigation bar - tablet*/
@@ -153,6 +199,22 @@ nav {
 }
   #logoName {
     font-size: 4vw;
+  }
+  #whyMembership{
+    padding: 5vh 7vw;
+  }
+  #whyMembershipHeading{
+    font-size: 5vw;
+  }
+  #membershipForm{
+    padding: 4vh 10vw;
+  }
+  .help{
+    font-size: 3vw;
+  }
+  #submitButton{
+    padding: 1vh;
+    font-size: 3vw;
   }
 }
 /* responsiveness for bigger screens  */
@@ -196,5 +258,38 @@ nav {
   nav{
     padding: 1.5vw;
 
+  }
+  #whyMembership{
+    margin-top: 15vh;
+    padding: 5vh 10vw;
+  }
+  #reasons{
+    font-size: 1vw;
+    padding: 1vh 0
+  }
+  #whyMembershipHeading{
+    font-size: 4vw;
+  }
+  #membershipForm{
+    padding: 4vh 15vw;
+  }
+  .help{
+    font-size: 3vw;
+  }
+  #submitButton{
+    padding: 1vh;
+    font-size: 3vw;
+  }
+  #formHeading{
+    font-size: 4vw;
+  }
+  label p{
+    font-size: 2vw;
+  }
+  .help{
+    font-size: 2vw;
+  }
+  #submitButton{
+    font-size: 1.5vw;
   }
 }

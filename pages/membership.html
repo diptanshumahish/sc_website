@@ -8,7 +8,7 @@
     <!-- css  -->
     <link rel="stylesheet" href="/css/member.css">
 </head>
-<body onscroll="showNav()">
+<body>
     <nav id="navbar">
       <div id="logo">
         <p id="logoName">IEI Students' Chapter</p>
@@ -35,15 +35,76 @@
 
       </div>
     </nav>
+    <div id="whyMembership">
+      <div id="whyMembershipHeading">
+        Why should you take memebership for student's chapter?
+      </div>
+      <div id="reasons">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eius aspernatur maxime officiis dolor quam animi, dignissimos rem quidem voluptates deleniti perspiciatis repellat ullam libero nostrum praesentium repudiandae facere sequi corporis minima ratione voluptate saepe eaque doloribus. Laborum ullam vel facilis cupiditate, hic eaque sit tempora, maxime ad, error mollitia!
+      </div>
+    </div>
+    <div id="membershipForm">
+      <div id="formHeading">
+        Registration Form
+      </div>
+      <form action="" id="regForm">
+        <label for="name">
+          <p class="formele">
+            Your Full Name
+          </p>
+          <input class="inputBox" type="text" name="name" id="name" placeholder="Enter your name" required>
+        </label>
+        
+        <label for="address">
+          <p class="formele">
+            Your Full Address
+          </p>
+          <input class="inputBox" type="text" name="address" id="address" placeholder="Enter your Full Address" required>
+        </label>
+        <label for="email">
+          <p class="formele">
+            Your email
+          </p>
+          <input class="inputBox" type="email" name="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label for="aotemail">
+          <p class="formele">
+            Your AOT email
+          </p>
+          <input class="inputBox" type="email" name="aotemail" id="aotemail" placeholder="Enter your AOT email" required>
+        </label>
+        <label for="uniRoll">
+          <p class="formele">
+            Your University Roll Number
+          </p>
+          <input class="inputBox" type="number" name="uniRoll" id="uniRoll" placeholder="Enter your University Roll NUmber" required>
+        </label>
+        <label for="sem">
+          <p class="formele">
+            Your sem
+          </p>
+          <select class="inputBox"name="semester" id="stream" required>
+            <option value="1CSE1">1CSE1</option>
+            <option value="1CSE2">1CSE2</option>
+            <option value="1CSE3">1CSE3</option>
+            <option value="2CSE1">2CSE1</option>
+            <option value="2CSE2">2CSE2</option>
+            <option value="2CSE3">2CSE3</option>
+            <option value="2CSE1">3CSE1</option>
+            <option value="2CSE2">3CSE2</option>
+            <option value="2CSE3">3CSE3</option>
+          </select>
+        </label>
+        <div class="help"><a href="#">Need any Help? Mail Us</a></div>
+        <button id="submitButton" type="submit"> <i class="fa-solid fa-lock"></i> Pay 536 and Submit</button>
+      </form>
+    </div>
     
-    <script src="/js/app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/pages.js"></script>
     <script
       src="https://kit.fontawesome.com/0ac8d96b33.js"
       crossorigin="anonymous"></script>
-    <script>
-      AOS.init();
-    </script>
+  
     
 </body>
 <div id="mobileMenuPage">
