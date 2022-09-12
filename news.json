@@ -3,12 +3,18 @@
         "imageLink":"https://images.unsplash.com/photo-1662575330305-994bc648081b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1008&q=80",
         "Heading":"Heading1",
         "content":"some tiny bit of information here ",
-        "date":"20thSeptember,2022"
+        "date":"20th September,2022"
     },
     {
         "imageLink":"https://images.unsplash.com/photo-1662575330305-994bc648081b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1008&q=80",
-        "Heading":"Heading1",
-        "content":"some tiny bit of information here ",
-        "date":"20thSeptember,2022"
+        "Heading":"Heading2",
+        "content":"some tiny bit of information here sdfnk ",
+        "date":"20th,September,2022"
+    },
+    {
+        "imageLink":"https://images.unsplash.com/photo-1662575330305-994bc648081b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1008&q=80",
+        "Heading":"Heading3",
+        "content":"some tinyof information here ",
+        "date":"25th,OCtober,2022"
     }
 ]
