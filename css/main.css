@@ -643,6 +643,9 @@ section{
 
   
 }
+.cardTopImage{
+  min-height:55vh ;
+}
 .cardBottomContent{
   height: 15vh;
   display: flex;
