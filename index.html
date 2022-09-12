@@ -64,12 +64,18 @@
     <div id="welcome">
       <div id="welcomeHeading"></div>
       <div id="ScLogo">
-        <img src="/assets/sc sceDrkVector.png" alt="">
+        <img src="/assets/sc sceDrkVector.png" alt="scLogo">
       </div>
     </div>
 
     <div id="noteFromHead">
       <!-- note that in the desktop version there would be a a  picture as well -->
+      <div id="imageSir" data-aos="fade-up">
+        <div id="imageContent">
+
+        </div>
+      </div>
+      
       <div id="noteWires" data-aos="fade-up">
         <div id="noteHeading">A note from the SC heads:</div>
         <div class="notePara">
@@ -85,11 +91,7 @@
           </div>
         </div>
       </div>
-      <div id="imageSir" data-aos="fade-up">
-        <div id="imageContent">
-
-        </div>
-      </div>
+      
     </div>
     <div id="whySc" data-aos="fade-right">
       <div id="whyScHeading">Why a Students' Chapter?</div>
@@ -252,6 +254,11 @@
       modifier: 4,
       slideShadows: true,
     },
+    autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        
     pagination: {
       el: ".swiper-pagination",
     },

@@ -247,13 +247,26 @@ label p{
   }
   .lapOption{
     padding: 1.5vh 1vw;
-    border-radius: 0.5vh;
+
+    font-size: 1vw;
+    border-bottom:2px solid transparent;
   }
+
   .lapOption:hover{
-    background-color: #ebedd0;
+    border-bottom:2px solid #ebedd0;
     transition: 500ms ease;
-    color: #111;
+    color:#ebedd0;
     cursor: pointer;
+  }
+  .lapOption:nth-child(6){
+    border: unset;
+    border-radius: 50%;
+  }
+  .lapOption:nth-child(6):hover{
+    background-color: #ebedd0;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+    color: #111;
   }
   nav{
     padding: 1vh 2vw;

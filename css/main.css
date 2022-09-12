@@ -514,6 +514,17 @@ footer {
   gap: 3vw;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* reponsiveness for tablets */
 @media screen and (min-width: 600px) {
   /* navigation bar - tablet*/
@@ -771,7 +782,7 @@ footer {
 
 }
 /* responsiveness for bigger screens  */
-@media screen and (min-width:920px) {
+@media screen and (min-width:1000px) {
   #mobileMenuPage{
     display: none;
   }
@@ -810,14 +821,26 @@ footer {
   }
   .lapOption{
     padding: 1.5vh 1vw;
-    border-radius: 0.5vh;
+
     font-size: 1vw;
+    border-bottom:2px solid transparent;
   }
+
   .lapOption:hover{
-    background-color: #ebedd0;
+    border-bottom:2px solid #ebedd0;
     transition: 500ms ease;
-    color: #111;
+    color:#ebedd0;
     cursor: pointer;
+  }
+  .lapOption:nth-child(6){
+    border: unset;
+    border-radius: 50%;
+  }
+  .lapOption:nth-child(6):hover{
+    background-color: #ebedd0;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+    color: #111;
   }
   nav{
     padding: 1vh 2vw;
@@ -843,11 +866,11 @@ footer {
 
 #heroBottomText {
   height: 65vh;
-  padding: 0;
+  padding: 5vh;
   margin: 0;
   width: 100vw;
   text-align: center;
-  border-bottom: 30px solid var(--backColor);
+  /* border-bottom: 30px solid var(--backColor); */
 }
 
 #heroHeading {
@@ -876,6 +899,7 @@ footer {
 #ScLogo{
 
   display: block;
+  mix-blend-mode: difference;
 
 
 }
@@ -903,37 +927,47 @@ footer {
 #noteWires{
   width:55vw;
   border: none;
-  border-right: 3px solid var(--backColor);
+  /* border-left: 3px solid var(--backColor); */
 }
 #imageSir{
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
   height: 70vh;
   min-height: 70vh;
-
-  width:45vw;
+  width:40vw;
   padding: 2vw;
 }
 #imageContent{
   height:100%;
-  width:100%;
-  
+  width:60%;
+  border-radius: 3px;
   overflow: hidden;
   background: url('https://images.unsplash.com/photo-1574802406791-ef6898f311d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=682&q=80');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #noteHeading{
-  font-size: 1.5vw;
-  text-align: right;
+  font-size: 3vw;
+  text-align: left;
+  padding-right: 0;
+  background-color: unset;
+  border-bottom: 1px solid var(--backColor);
+  border: unset;
+  color: var(--backColor);
+
 }
 .notePara{
   font-size: 1vw;
-  text-align: right;
+  text-align: left;
 }
 #TeacherName{
   font-size: 1.5vw;
+  text-align: left;
 }
 #teacherDetails{
   font-size: 0.9vw;
+  text-align: left;
 }
 /* why sc  */
 #whyScHeading{
@@ -945,6 +979,7 @@ footer {
 }
 #whySc{
   text-align: left;
+  
   font-size: 1vw;
   align-items: flex-start;
 }
@@ -976,8 +1011,6 @@ footer {
 }
 
 section{
-  border-top:1px solid var(--backColor);
-  border-bottom:1px solid var(--backColor);
   width:100%;
   min-height: 70vh;
   display: flex;
@@ -991,12 +1024,14 @@ section{
 .NewsHeading{
   display: block;
   font-size: 1vw;
-  border-right: apx solid var(--backColor);
+  padding: 1vh;
+  border-top:1px solid var(--backColor);
+  border-bottom:1px solid var(--backColor);
   color: var(--backColor);
 }
 .NewsHeading p:first-child{
   font-size: 5vw;
-  font-weight: 100;
+  font-weight: 700;
 }
 .swiper-container
 {
@@ -1048,6 +1083,17 @@ section{
 #leftEmail{
   font-size: 1.2vw45;
 }
+#newsLetterEmail::placeholder{
+  color: var(--backColor);
+  font-size: 0.8vw;
+}
+#newsLetterEmail{
+  border: 1px solid var(--backColor);
+  background-color: var(--themeBlue);
+}
+#newsLetterDetails{
+  font-size: 0.9vw;
+}
 #rightSend{
   min-height: 5vh;
   padding: 1.9vw;
@@ -1055,7 +1101,7 @@ section{
 }
 /* quick links  */
 #quickLinksHeading{
-  font-size: 4vw;
+  font-size: 3vw;
 }
 #quickLinks {
   padding: 10vw;
@@ -1070,16 +1116,16 @@ section{
   padding: 7vh 0;
 }
 .quickLinkCard {
-  height: 30vh;
+  height: 20vh;
   transition: 600ms ease;
   cursor: pointer;
 
 }
 .quickLinkHead {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 .quickLinkDetails {
-  font-size: 2vw;
+  font-size: 1vw;
 }
 .quickLinkCard:hover{
   transition:all  800ms ease;
@@ -1087,5 +1133,8 @@ section{
 }
 #footerSocials{
   gap:20px;
+}
+footer{
+  padding: 1vh 20vw;
 }
 }
