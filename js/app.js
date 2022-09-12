@@ -100,7 +100,7 @@ function appendData(data) {
               ${news.content}
             </div>
             <div class="cardBottomDate">
-              ${news.date}
+              (${news.date})
             </div>
           </div>
         </div>
