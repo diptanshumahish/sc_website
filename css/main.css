@@ -89,7 +89,7 @@
 }
 
 body {
-  background-color: var(--themeBlue);
+  background-color:var(--themeBlue);
 }
 
 nav {
@@ -215,7 +215,7 @@ nav {
 #noteWires {
   padding: 5vw;
   color: var(--backColor);
-  text-align: right;
+  text-align:left;
   font-size: 5vw;
   border: 1.3px solid var(--backColorLight);
   outline-offset: 2px;
@@ -265,70 +265,26 @@ nav {
 }
 
 /* news corner */
-#News {
-  padding: 3vw;
-  border: 1px solid var(--backColor);
-  margin: 2vw;
+.swiper{
+  width: 100%;
 }
-
-#NewsHeading {
-  font-size: 8vw;
-  font-weight: 800;
-  text-align: left;
-  color: var(--backColor);
-}
-
-#NewsCards {
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  background-color: rgb(124, 44, 113);
   display: flex;
-  overflow-y: scroll;
-  flex-direction: row;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
-
-.newsCard {
-  height: 40vh;
-  min-width: 70vw;
-  border-radius: 2px;
+.newsCard{
+  width: 20em;
+  background-color: #fff;
 }
-
-.newsDetails {
-  font-size: 4vw;
-  padding: 2vh 0;
-  font-weight: normal;
-}
-
-.CardBottomContent {
-  position: relative;
-  height: 100%;
-  background: linear-gradient(transparent, #111);
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  text-align: left;
-  padding: 3vw;
-  color: #ebedd0;
-}
-
-.cardHeading {
-  font-size: 6vw;
-  font-weight: 700;
-  padding: 1vh 0;
-}
-
-.cardContent {
-  font-size: 4vw;
-  color: #ebedd0e1;
-}
-
-.cardDate {
-  font-size: 3vw;
-  color: #ebedd0a4;
-}
-
 /* upcoming events  */
 #upcomingEvents {
   padding: 4vh 3vw;
 }
+
 
 #EventsHead {
   color: var(--backColor);
@@ -349,6 +305,7 @@ nav {
   border: 1px solid var(--backColor);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   color: var(--backColor);
   padding: 2vh;
@@ -373,7 +330,8 @@ nav {
 
 .rightEventKnowMore a {
   text-decoration: none;
-  color: var(--backColorLight);
+  color: var(--backColor);
+  font-weight: 600;
 }
 
 /* newsletter  */
@@ -605,39 +563,6 @@ footer {
     text-align: left;
     padding-bottom: 2vh;
   }
-  /* news corner */
-  #News {
-    padding: 4vw;
-    border: none;
-    margin: 6vw;
-  }
-
-  #NewsHeading {
-    font-size: 6vw;
-  }
-  .newsDetails{
-    font-size: 3vw;
-    padding: 2vh 0;
-    font-weight: normal;
-  }
-  .newsCard {
-    height: 50vh;
-    min-width: 43vw;
-    border-radius: 1vw;
-  }
-  .cardHeading {
-    font-size: 4vw;
-  }
-
-  .cardContent {
-    font-size: 2vw;
-    color: #ebedd0e1;
-  }
-
-  .cardDate {
-    font-size: 1.5vw;
-    color: #ebedd0a4;
-  }
   /* upcoming events  */
 #upcomingEvents {
     padding: 4vh 7vw;
@@ -771,17 +696,23 @@ footer {
     justify-content: space-between;
   }
   #logoName{
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   #Member{
     background-color: #ebedd0;
     padding: 1.5vh 1vw;
     color: #111;
+  
     font-weight: 600;
     border-radius: 0.5vh;
     margin: 1vw;
     font-size: 1vw;
     cursor: pointer;
+  }
+  .lapLeft{
+    display: flex;
+    gap:1vw;
+    margin-right: 5vw;
   }
   #Member:hover{
     box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
@@ -790,6 +721,7 @@ footer {
   .lapOption{
     padding: 1.5vh 1vw;
     border-radius: 0.5vh;
+    font-size: 1vw;
   }
   .lapOption:hover{
     background-color: #ebedd0;
@@ -798,7 +730,7 @@ footer {
     cursor: pointer;
   }
   nav{
-    padding: 1.5vw;
+    padding: 1vh 2vw;
 
   }
   /* home page  */
@@ -821,13 +753,17 @@ footer {
 
 #heroBottomText {
   height: 65vh;
-  padding: 1vw;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  text-align: center;
   border-bottom: 30px solid var(--backColor);
 }
 
 #heroHeading {
-  font-size: 2vw;
+  font-size: 3vw;
   color: #ebedd0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 #heroDetails {
@@ -844,33 +780,18 @@ footer {
   align-items: center;
   border: none;
   height: unset;
+  padding: 5vh 7vw;
 
 }
 #ScLogo{
-  display: flex;
-  width: 25vw;
-  border-radius: 0.5vh;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 1vw;
-  height:25vw;
-  color: var(--themeBlue);
-  background-color: var(--backColor);
+
+  display: block;
+
 
 }
 #welcomeHeading {
-  font-size: 2vw;
+  font-size: 1vw;
   width: 60vw;
-}
-#iei{
-  font-size: 6vw;
-  font-weight: 700;
-}
-#sc{
-  font-size: 8vw;
-  font-weight: 900;
 }
 
 #welHead {
@@ -885,6 +806,9 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+#noteHeading{
+  font-size: 1vw;
 }
 #noteWires{
   width:55vw;
@@ -908,93 +832,52 @@ footer {
   background-size: cover;
 }
 #noteHeading{
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-align: right;
 }
 .notePara{
+  font-size: 1vw;
+  text-align: right;
+}
+#TeacherName{
   font-size: 1.5vw;
+}
+#teacherDetails{
+  font-size: 0.9vw;
 }
 /* why sc  */
 #whyScHeading{
-  font-size: 4vw;
+  font-size: 3vw;
   text-align:left ;
+
   padding: 0;
   margin:0 ;
 }
 #whySc{
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 1vw;
   align-items: flex-start;
 }
 
-/* news heading  */
-#NewsHeading{
-  font-size: 4vw;
-}
-.newsDetails{
-  font-size: 1.5vw
-}
-#NewsCards {
-  display: flex;
-  overflow-y: scroll;
-  flex-direction: row;
-  gap: 1vw;
-
-}
 #newsLetterDetails{
   font-size: 1.2vw;
 }
 
-.newsCard {
-  height: 450px;
-  width: 400px;
-  min-width: 400px;
-  border-radius: 1px;
-  /* border: 1px solid var(--backColor); */
-  padding: 1vw;
-}
 
-.newsDetails {
-  font-size: 2vw;
-  padding: 2vh 0;
-  font-weight: normal;
-}
-
-.CardBottomContent {
-  position: relative;
-  height: 100%;
-  background: linear-gradient(transparent, #111);
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  text-align: left;
-  padding: 3vw;
-  color: #ebedd0;
-}
-
-.cardHeading {
-  font-size: 2vw;
-  font-weight: 700;
-  padding: 1vh 0;
-}
-
-.cardContent {
-  font-size: 1vw;
-  color: #ebedd0e1;
-}
-
-.cardDate {
-  font-size: 1vw;
-  color: #ebedd0a4;
-}
 /* upcoming events  */
 #EventsHead{
-  font-size: 4vw;
+  font-size: 3vw;
+}
+.rightEventDate{
+  font-size: 1vw;
 }
 .eventsSubhead{
-  font-size:1.5vw ;
+  font-size:1vw ;
 }
 .rightEventContent{
+  font-size: 2vw;
+}
+#newsLetterHeading{
   font-size: 3vw;
 }
 

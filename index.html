@@ -1,240 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- aos library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- fa -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <title>Students' Chapter Cse</title>
-  </head>
 
-  <body onscroll="showNav()">
-    <nav id="navbar">
-      <div id="logo">
-        <p id="logoName">IEI Students' Chapter</p>
-        <p id="logoName_details">CSE</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/sc sce.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- aos library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- fa -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <title>Students' Chapter Cse</title>
+</head>
+
+<body onscroll="showNav()">
+  <nav id="navbar">
+    <div id="logo">
+      <p id="logoName">IEI Students' Chapter</p>
+      <p id="logoName_details">CSE</p>
+    </div>
+    <!-- menu for mobile devices -->
+    <div id="mobileMenu">
+      <div id="themeTogglerBtn"><i class="fa-solid fa-moon"></i></div>
+      <div id="menuOptions" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <!-- menu for mobile devices -->
-      <div id="mobileMenu">
-        <div id="themeTogglerBtn"><i class="fa-solid fa-moon"></i></div>
-        <div id="menuOptions" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-      <!-- menu for bigger screens  -->
-      <div id="lapMenu">
+    </div>
+    <!-- menu for bigger screens  -->
+    <div id="lapMenu">
+      <div class="lapLeft">
         <div class="lapOption" onclick="location.href='index.html'">Home</div>
         <div class="lapOption" onclick="location.href='pages/events.html'">Events</div>
         <div class="lapOption" onclick="location.href='pages/teams.html'">Teams</div>
         <div class="lapOption" onclick="location.href='pages/gallery.html'">Gallery</div>
         <div class="lapOption" onclick="location.href='pages/activity.html'">Activities</div>
-        <div class="lapOption"id="themeTogglerBtnLap"><i class="fa-solid fa-moon"></i></div>
-        <div  id ="Member" onclick="location.href='pages/membership.html'">Become a member</div>
+        <div class="lapOption" id="themeTogglerBtnLap"><i class="fa-solid fa-moon"></i></div>
+      </div>
 
-      </div>
-    </nav>
-    <div id="home">
-      <!-- here in this hero section various event cards will keep palying -->
-      <div id="DisplayHero">
-        <div id="heroCards">
-          <div class="filter">
-            <div id="heroBottomText">
-              <div id="heroHeading">An event maybe?</div>
-              <div id="heroDetails">some details</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="welcome">
-        <div id="welcomeHeading"></div>
-        <div id="ScLogo">
-          <div id="iei">IEI</div>
-          <div id="sc">Sc</div>
-        </div>
-      </div>
-      
-      <div id="noteFromHead">
-        <!-- note that in the desktop version there would be a a  picture as well -->
-        <div id="noteWires" data-aos="fade-up">
-          <div id="noteHeading">A note from the SC heads:</div>
-          <div class="notePara">
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-            tempore sit non a ducimus eos odit, odio natus accusantium qui,
-            repellat neque totam quis, rem cupiditate earum voluptatum nulla.
-            Officiis maiores, impedit necessitatibus dignissimos facilis
-            expedita eos tenetur pariatur placeat neque ipsam voluptatum,
-            possimus animi assumenda vitae similique? In, quidem?""
-            <div id="TeacherName">
-              <div>-Some Name</div>
-              <div id="teacherDetails">(Post maybe?)</div>
-            </div>
-          </div>
-        </div>
-        <div id="imageSir" data-aos="fade-up">
-          <div id="imageContent">
+      <div id="Member" onclick="location.href='pages/membership.html'">Become a member</div>
 
-          </div>
-        </div>
-      </div>
-      <div id="whySc" data-aos="fade-right">
-        <div id="whyScHeading">Why a Students' Chapter?</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-        reprehenderit necessitatibus voluptas. Dolorem, ab dolor debitis facere
-        laudantium voluptate assumenda non dolores mollitia. Sequi omnis quidem
-        aliquid est minima eaque ex, provident modi, reiciendis recusandae
-        dignissimos?
-      </div>
-      <div id="News">
-        <div id="NewsHeading">
-          News Corner
-          <div class="newsDetails">Keep yourself updated(Swipe to see more)</div>
-          <div id="NewsCards"></div>
-        </div>
-      </div>
-      <!-- upcoming events  -->
-      <div id="upcomingEvents">
-        <div id="EventsHead">What's upcoming?</div>
-        <div class="eventsSubhead">
-          Keep an eye on our latest upcoming events
-        </div>
-        <div id="eventsFew">
-          <div class="eventCard" data-aos="fade-right">
-            <div class="leftEvent">
-              <div class="circle"></div>
-            </div>
-            <div class="rightEvent">
-              <div class="rightEventDate">12th,October</div>
-              <div class="rightEventContent">A hackathon event</div>
-              <div class="rightEventKnowMore"><a href="">See more</a></div>
-            </div>
-          </div>
-          <!-- card 2 -->
-
-          <div class="eventCard" data-aos="fade-right">
-            <div class="leftEvent">
-              <div class="circle"></div>
-            </div>
-            <div class="rightEvent">
-              <div class="rightEventDate">15th,October</div>
-              <div class="rightEventContent">Something Else</div>
-              <div class="rightEventKnowMore"><a href="">See more</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="NewsLetter" data-aos="fade-up">
-        <div id="newsLetterHeading">Newsletter</div>
-        <div id="newsLetterDetails">
-          Everyone is requested to subscribe to our newsletter to keep
-          receieving updates about events
-        </div>
-        <div id="EmailEnteringBox">
-          <div id="leftEmail">
-            <input
-              type="email"
-              name="newsLetterEmail"
-              id="newsLetterEmail"
-              placeholder="Enter your email"
-            />
-          </div>
-          <div id="rightSend">Submit</div>
-        </div>
-      </div>
     </div>
-    <div id="quickLinks">
-      <div id="quickLinksHeading">
-        Quick Links <i class="fa-solid fa-arrow-right"></i>
-      </div>
-      <div id="quickLinksCards">
-        <!-- events  -->
-        <div class="quickLinkCard q1" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Events</div>
-            <div class="quickLinkDetails">Check out more about events</div>
-          </div>
-        </div>
-        <!-- teams  -->
-        <div class="quickLinkCard q2" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Teams</div>
-            <div class="quickLinkDetails">Discover our various teams</div>
-          </div>
-        </div>
-        <!-- gallery  -->
-        <div class="quickLinkCard q3" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Gallery</div>
-            <div class="quickLinkDetails">
-              Check out those captured moments!
-            </div>
-          </div>
-        </div>
-        <!-- Activities -->
-        <div class="quickLinkCard q4" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Activities</div>
-            <div class="quickLinkDetails">See what we are doing!</div>
-          </div>
-        </div>
-        <!-- contact  -->
-        <div class="quickLinkCard q5" data-aos="fade-right">
-          <div class="qfilter">
-            <div class="quickLinkHead">Contact</div>
-            <div class="quickLinkDetails">Let's connect!</div>
+  </nav>
+  <div id="home">
+    <!-- here in this hero section various event cards will keep palying -->
+    <div id="DisplayHero">
+      <div id="heroCards">
+        <div class="filter">
+          <div id="heroBottomText">
+            <div id="heroHeading">An event maybe?</div>
+            <div id="heroDetails">some details</div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footerHead">&copy; Students' chapter Cse 2022
-        <div class="footerSubHead">AOT,Adisaptagram</div>
+    <div id="welcome">
+      <div id="welcomeHeading"></div>
+      <div id="ScLogo">
+        <img src="/assets/sc sceDrkVector.png" alt="">
       </div>
- 
-      <div id="footerInfo">
-        <div id="footerMainContact">
-          <div class="footerContact">
-            <i class="fa-solid fa-phone"></i>+10000000
-          </div>
-          <div class="footerContact">
-            <i class="fa-regular fa-envelope"></i>Something@email.com
+    </div>
+
+    <div id="noteFromHead">
+      <!-- note that in the desktop version there would be a a  picture as well -->
+      <div id="noteWires" data-aos="fade-up">
+        <div id="noteHeading">A note from the SC heads:</div>
+        <div class="notePara">
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+          tempore sit non a ducimus eos odit, odio natus accusantium qui,
+          repellat neque totam quis, rem cupiditate earum voluptatum nulla.
+          Officiis maiores, impedit necessitatibus dignissimos facilis
+          expedita eos tenetur pariatur placeat neque ipsam voluptatum,
+          possimus animi assumenda vitae similique? In, quidem?""
+          <div id="TeacherName">
+            <div>-Some Name</div>
+            <div id="teacherDetails">(Post maybe?)</div>
           </div>
         </div>
-        <div id="footerSocials">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-          <a href=""> <i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-square-github"></i></a>
-          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+      <div id="imageSir" data-aos="fade-up">
+        <div id="imageContent">
+
         </div>
       </div>
-    </footer>
-    <script src="/js/app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0ac8d96b33.js"
-      crossorigin="anonymous"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-  <div id="mobileMenuPage">
-    <div id="close-btn" onclick="closeMenu()">&times;</div>
-    <div id="mobMenuOptions">
-      NAVIGATION
-      <div onclick="location.href='index.html'">Home</div>
-      <div onclick="location.href='pages/events.html'">Events</div>
-      <div onclick="location.href='pages/teams.html'">Teams</div>
-      <div onclick="location.href='pages/activity.html'">Activities</div>
-      <div onclick="location.href='pages/gallery.html'">Gallery</div>
-      <div onclick="location.href='pages/membership.html'">Become a member</div>
-      SOCIALS
-      <div id="socialLinks">
+    </div>
+    <div id="whySc" data-aos="fade-right">
+      <div id="whyScHeading">Why a Students' Chapter?</div>
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+      reprehenderit necessitatibus voluptas. Dolorem, ab dolor debitis facere
+      laudantium voluptate assumenda non dolores mollitia. Sequi omnis quidem
+      aliquid est minima eaque ex, provident modi, reiciendis recusandae
+      dignissimos?
+    </div>
+    
+  <!-- upcoming events  -->
+  <div id="upcomingEvents">
+    <div id="EventsHead">What's upcoming?</div>
+    <div class="eventsSubhead">
+      Keep an eye on our latest upcoming events
+    </div>
+    <div id="eventsFew">
+      <div class="eventCard" data-aos="fade-right">
+        <div class="leftEvent">
+          <div class="rightEventDate">12th,October</div>
+          <div class="rightEventContent">A hackathon event</div>
+        </div>
+        <div class="rightEvent">
+
+
+        </div>
+        <div class="rightEventKnowMore"><a href="">See more <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+      <!-- card 2 -->
+
+      <div class="eventCard" data-aos="fade-right">
+        <div class="leftEvent">
+          <div class="rightEventDate">15th,October</div>
+          <div class="rightEventContent">Something else</div>
+        </div>
+        <div class="rightEvent">
+
+
+        </div>
+        <div class="rightEventKnowMore"><a href="">See more <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <div id="NewsLetter" data-aos="fade-up">
+    <div id="newsLetterHeading">Newsletter</div>
+    <div id="newsLetterDetails">
+      Everyone is requested to subscribe to our newsletter to keep
+      receieving updates about events
+    </div>
+    <div id="EmailEnteringBox">
+      <div id="leftEmail">
+        <input type="email" name="newsLetterEmail" id="newsLetterEmail" placeholder="Enter your email" />
+      </div>
+      <div id="rightSend">Submit</div>
+    </div>
+  </div>
+  </div>
+  <div id="quickLinks">
+    <div id="quickLinksHeading">
+      Quick Links <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <div id="quickLinksCards">
+      <!-- events  -->
+      <div class="quickLinkCard q1" data-aos="fade-right">
+        <div class="qfilter">
+          <div class="quickLinkHead">Events</div>
+          <div class="quickLinkDetails">Check out more about events</div>
+        </div>
+      </div>
+      <!-- teams  -->
+      <div class="quickLinkCard q2" data-aos="fade-right">
+        <div class="qfilter">
+          <div class="quickLinkHead">Teams</div>
+          <div class="quickLinkDetails">Discover our various teams</div>
+        </div>
+      </div>
+      <!-- gallery  -->
+      <div class="quickLinkCard q3" data-aos="fade-right">
+        <div class="qfilter">
+          <div class="quickLinkHead">Gallery</div>
+          <div class="quickLinkDetails">
+            Check out those captured moments!
+          </div>
+        </div>
+      </div>
+      <!-- Activities -->
+      <div class="quickLinkCard q4" data-aos="fade-right">
+        <div class="qfilter">
+          <div class="quickLinkHead">Activities</div>
+          <div class="quickLinkDetails">See what we are doing!</div>
+        </div>
+      </div>
+      <!-- contact  -->
+      <div class="quickLinkCard q5" data-aos="fade-right">
+        <div class="qfilter">
+          <div class="quickLinkHead">Contact</div>
+          <div class="quickLinkDetails">Let's connect!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footerHead">&copy; Students' chapter Cse 2022
+      <div class="footerSubHead">AOT,Adisaptagram</div>
+    </div>
+
+    <div id="footerInfo">
+      <div id="footerMainContact">
+        <div class="footerContact">
+          <i class="fa-solid fa-phone"></i>+10000000
+        </div>
+        <div class="footerContact">
+          <i class="fa-regular fa-envelope"></i>Something@email.com
+        </div>
+      </div>
+      <div id="footerSocials">
         <a href=""><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-square-facebook"></i></a>
         <a href=""> <i class="fa-brands fa-linkedin"></i></a>
@@ -242,5 +211,55 @@
         <a href=""><i class="fa-brands fa-square-twitter"></i></a>
       </div>
     </div>
+  </footer>
+  <script src="/js/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/0ac8d96b33.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script> -->
+</body>
+<div id="mobileMenuPage">
+  <div id="close-btn" onclick="closeMenu()">&times;</div>
+  <div id="mobMenuOptions">
+    NAVIGATION
+    <div onclick="location.href='index.html'">Home</div>
+    <div onclick="location.href='pages/events.html'">Events</div>
+    <div onclick="location.href='pages/teams.html'">Teams</div>
+    <div onclick="location.href='pages/activity.html'">Activities</div>
+    <div onclick="location.href='pages/gallery.html'">Gallery</div>
+    <div onclick="location.href='pages/membership.html'">Become a member</div>
+    SOCIALS
+    <div id="socialLinks">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+      <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-square-github"></i></a>
+      <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
   </div>
+</div>
+
 </html>

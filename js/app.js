@@ -67,40 +67,40 @@ Have a great ${dayList[dayFinal]}! ^^ `;
 
 
 //data fetch api using json
-fetch("./news.json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        appendData(data);
-    })
-    .catch(function (err) {
-        console.log(err);
-    })
-function appendData(data) {
-    document.getElementById("NewsCards").innerHTML = `
-            ${data.map(function (news) {
-        return `<div class="newsCard" style="
-                    background-image:url('${news.imageLink}');
-                    background-size:cover;
-                    background-position:center;">
-                        <div class ="CardBottomContent">
-                            <div class="cardHeading">
-                            ${news.Heading}
-                            </div>
-                            <div class="cardContent">
-                            ${news.content}
-                            </div>
-                            <div class="cardDate">
-                            ${news.date}
-                            </div>
-                         </div>
+// fetch("./news.json")
+//     .then(function (response) {
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         appendData(data);
+//     })
+//     .catch(function (err) {
+//         console.log(err);
+//     })
+// function appendData(data) {
+//     document.getElementById("NewsCards").innerHTML = `
+//             ${data.map(function (news) {
+//         return `<div class="newsCard" style="
+//                     background-image:url('${news.imageLink}');
+//                     background-size:cover;
+//                     background-position:center;">
+//                         <div class ="CardBottomContent">
+//                             <div class="cardHeading">
+//                             ${news.Heading}
+//                             </div>
+//                             <div class="cardContent">
+//                             ${news.content}
+//                             </div>
+//                             <div class="cardDate">
+//                             ${news.date}
+//                             </div>
+//                          </div>
 
 
-                </div>
+//                 </div>
 
 
-                `
-    }).join('')}  
-            `
-}
+//                 `
+//     }).join('')}  
+//             `
+// }
